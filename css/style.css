@@ -2,8 +2,11 @@
 
 :root{
     --yellow:#f9ca24;
-
+    --black: #111;
+    --white: #fff;
 }
+
+
 
 *{
     font-family: 'Nunito', sans-serif;
@@ -40,7 +43,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 body{
-    background: #111;
+    background: var(--black);
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -53,7 +56,7 @@ section{
 .btn{
     padding: .7rem 3rem;
     background: #333;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -66,7 +69,7 @@ section{
 }
 
 .btn:hover{
-    background: var(--yellow);
+    background: #c5a216;
 }
 
 .heading{
@@ -106,7 +109,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: .7rem solid var(--yellow);
+    border: .7rem solid #f9ca24;
 }
 
 header .user .name{
@@ -143,10 +146,16 @@ header .navbar ul li a:hover{
 }
 
 header .foot i{
-    color: var(--yellow);
+    color: #f9ca24;
     padding: 1rem;
     font-size: 2rem;
+    cursor: pointer;
 }
+
+header .foot i:hover{
+    transform: scale(1.8);
+}
+
 #menu{
     position: fixed;
     top: 2rem;
@@ -169,12 +178,12 @@ header .foot i{
 
 .home h3{
     font-size: 2.5rem;
-    color: #fff;
+    color:  var(--white);
 }
 
 .home h1{
     font-size: 5rem;
-    color: #fff;
+    color:  var(--white);
 }
 
 .home h1 span{
@@ -183,7 +192,7 @@ header .foot i{
 
 .home p{
     font-size: 2rem;
-    color: #eee;
+    color:  var(--white);
     padding: 1rem 0;
     text-transform: none;
 }
@@ -210,7 +219,7 @@ header .foot i{
 }
 
 .about .row .info span{
-    color: #eee;
+    color: var(--white);
     padding: 0 .5rem;
 }
 
@@ -236,7 +245,7 @@ header .foot i{
 
 .about .row .counter .box h3{
     font-size: 2rem;
-    color: #fff;
+    color: var(--white);
 }
 
 .education .box-container{
@@ -252,14 +261,14 @@ header .foot i{
     width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
-    border-left: .2rem solid #fff;
+    border-left: .2rem solid var(--white);
     position: relative;
 }
 
 .education .box-container .box span{
     font-size: 1.3rem;
     background: #222;
-    color: #fff;
+    color:  var(--white);
     border-radius: 5rem;
     padding: .5rem 2.5rem;
 
@@ -267,13 +276,13 @@ header .foot i{
 
 .education .box-container .box h3{
     font-size: 2rem;
-    color: #fff;
+    color:  var(--white);
     padding-top: 1.5rem;
 }
 
 .education .box-container .box p{
     font-size: 1.4rem;
-    color: #eee;
+    color: var(--white);
     padding-top: 1rem 0;
 }
 
@@ -287,7 +296,7 @@ header .foot i{
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    color: #fff;
+    color: var(--white);
     background: var(--yellow);
 }
 
@@ -343,7 +352,7 @@ header .foot i{
     padding: 1rem;
     margin: 1rem 0;
     background: #333;
-    color: #fff;
+    color: var(--white);
     text-transform: none;
     font-size: 1.7rem;
     width: 100%;
@@ -360,7 +369,7 @@ header .foot i{
 
 .contact .row .content .title{
     text-transform: uppercase;
-    color: #fff;
+    color: var(--white);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -369,7 +378,7 @@ header .foot i{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color: #eee;
+    color: var(--white);
     padding: 1rem 0;
     font-weight: normal;
 }
